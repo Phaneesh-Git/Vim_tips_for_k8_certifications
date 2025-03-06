@@ -1,7 +1,7 @@
 Vim_tips 
 ------------------------------------------
 
-- Using VIM effectively can be incredibly helpful when preparing for and passing Kubernetes certification exams, such as the CKA (Certified Kubernetes Administrator) or CKAD (Certified Kubernetes Application Developer). These exams are hands-on and time-sensitive, so efficiency in editing and managing YAML files—a core task in Kubernetes—is crucial.
+- Using VIM effectively can be incredibly helpful when preparing for and passing Kubernetes certification exams, such as the CKA (Certified Kubernetes Administrator) or CKAD (Certified Kubernetes Application Developer). These exams are hands-on and time-sensitive, so efficiency in editing and managing YAML files is a core task in these exams.
 
 - [X] **To check VIM installed**
   ```bash
@@ -26,7 +26,7 @@ Vim_tips
     - `:help #keyhere || :h  #keyhere` - to get hep related to keys
 
          - _To check in visual_
-             * `:h v_d`-to check what does d key does in visual mode
+             * `:h v_d`-to check what does 'd' key does in visual mode
 
  * **Entry && Exit commands**
      *  `i`   - insert mode to enter txt
@@ -40,20 +40,20 @@ Vim_tips
      -  `W 'filename-here'`  - to write and save with a name
      -  `X`   - write and exit
      -  `ZZ`  - save and exit quickly
-     -  `ctrl+o` - to chnage to normal mode but stay in normal mode
+     -  `ctrl+o` - to change to normal mode but stay in normal mode
      -  `:! 'Enter linux command here'`  - run linux command from VIM editor
     
 * **Perform deletion**
      -  `di`  - delete everything inside the quotes
      -  `dG`  - delete content from cursor to end of file
-     -  `dgg` - to delete everything from bootm to top line
+     -  `dgg` - to delete everything from bottom to top line
      -   `x` - to delete a character
-     -   `dd`- to delete current line
+     -   `dd`- to delete the current line
 
           -  _To delete in insert mode_:
-             -  `ctrl+w` - to delet entire previous word
+             -  `ctrl+w` - to delete entire previous word
              -  `ctrl+h` - to delete one letter
-             -  `ctrl+u` - to delet everything infront of the cursor
+             -  `ctrl+u` - to delete everything infront of the cursor
         
  
 * **To set numbers for all files permanently**
@@ -73,7 +73,7 @@ Vim_tips
             * gg=G to indent everything from top line to bottom
       * _To indent few lines of code_
           * cmd mode+`shift+v` to select the txt
-          - Then `shift+>` to move those slected txt to right
+          - Then `shift+>` to move the selected txt to right
           - Then `shift+<` to move those selected txt to left
  -   `v`- to activate visual mode then use arrows to select lines or txt
     then Visual mode+`y`- copy or yank the txt or lines
@@ -93,8 +93,8 @@ Vim_tips
    - `b`- back one step
    - `$`- takes you to the end of first line. But it won’t be in insert mode
    - `0`- to go to start of line
-   - `gg` - to move the cursor the first line of the file
-   - `G or shift+g` - to take cursor the end of file
+   - `gg` - to move cursor to the first point of file
+   - `G or shift+g` - to take cursor to the end of file
 
 - **To set spell check**
     - `:set spell` - to check spell
@@ -113,7 +113,7 @@ Vim_tips
 ## Advanced commands:
 - `Vim +20 file-name` - to start cursor at line 20 of that file 
 - `Vim -o file1 file 2` - from terminal it opens two files in split window
-- `vim -O file1 file2`- from terminal it opens int vertical split window 
+- `vim -O file1 file2`- from terminal it opens in vertical split window 
 - `: split another file name` or `:sp file-name`- to open two files in one window horizontally 
 - `:vsplit file-name` or `:vs file-name` - to open a file in vertical split window
 - `Crtl++ ww` - to move to next file in split window 
@@ -123,7 +123,7 @@ Vim_tips
 - `:bn` - to see the next file of the buffer
 - `:bn` - to see the previous buffer file
 - `:bd` - to delete the current buffer 
-- `:badd file-name` - creates a buffer with new file but still cursor satya on current file
+- `:badd file-name` - creates a buffer with new file but still cursor stays on current file
 
 ✅ **_Task 1_** -take back up of a yaml file before editing
 ```
@@ -139,21 +139,21 @@ cp 1.yaml 1.yaml.b
 ✅ **_Task 3_** - Append text at the end of a line
 ```
 '/' to search then 
-SHIFT+a to append to the serch word
+SHIFT+a to append to the search word
 ```
 
 ✅ **_Task 4_** -Delete some txt from the cursor till end
 
 ```
 search '/word' then
-SHIFT+d to deletes then x
+SHIFT+d to delete then x
 ```
 
 ✅ **_Task 5_** - To indent a single line
 ```
 'o' to insert empty line
-SHIFT+. -to indent right then enter to keep inteding the soaces
-SHIFT+, - to indent left then enter to keep inteding the spaces
+SHIFT+. -to indent right then enter to keep intending the spaces
+SHIFT+, - to indent left then enter to keep intending the spaces
 ```
 ✅ **_Task 6_** -Add a line below or above
 ```
