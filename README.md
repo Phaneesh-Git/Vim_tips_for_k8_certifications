@@ -1,17 +1,19 @@
-# Vim_tips
+Vim_tips 
+------------------------------------------
+
 - Using VIM effectively can be incredibly helpful when preparing for and passing Kubernetes certification exams, such as the CKA (Certified Kubernetes Administrator) or CKAD (Certified Kubernetes Application Developer). These exams are hands-on and time-sensitive, so efficiency in editing and managing YAML files—a core task in Kubernetes—is crucial.
 
-  - **To check VIM installed**
-    ```bash
+- [X] **To check VIM installed**
+  ```bash
     -v vim
-    ```
-  - **To check default editor**
-    ```Bash
+  ```
+- [X] **To check default editor**
+  ```Bash
     $ echo $EDITOR
     Or
     Env | grep Editor
-    ```
-  - **To change default editor**                                                                                     
+  ```
+- [X] **To change default editor**                                                                                     
     1) select-editor ( only if select editor package installed)
     2) ```sudo update-alternatives --set editor /usr/bin/vim.basic```   
        ```sudo update-alternatives --set vi /usr/bin/vim.basic```
@@ -20,36 +22,38 @@
           export VISUAL=vim
           export EDITOR="$VISUAL"
 
-  - **Entry && Exit commands**
-      ‘i ‘ - insert mode to enter txt
-      ‘Esc’ - normal mode
-      ‘:’ - command mode
-      ‘:w’ - write the file but no quit
-      ‘:q’ - to quit or exit if no changes are done
-      ‘:q!’ - exit without saving the file
-      ‘:qa!’- exit and abort changes
-      ‘:wq’ - to write and quit
-      ‘W filename-here’ - to write and save with a name
-      'X' - write and exit
-      ‘ZZ’ - save and exit quickly
-       ctrl+o - to chnage to normal mode but stay in normal mode
-      ‘:! Enter linux command here’ - run linux command from VIM editor
+ * **Entry && Exit commands**
+     *  `i`   - insert mode to enter txt
+     -  `Esc` - normal mode
+     -  `:`   - command mode
+     -  `:w`  - write the file but no quit
+     -  `:q`  - to quit or exit if no changes are done
+     -  `:q!` - exit without saving the file
+     -  `:qa!`- exit and abort changes
+     -  `:wq` - to write and quit
+     -  `W 'filename-here'`  - to write and save with a name
+     -  `X`   - write and exit
+     -  `ZZ`  - save and exit quickly
+     -  `ctrl+o` - to chnage to normal mode but stay in normal mode
+     -  `:! 'Enter linux command here'`  - run linux command from VIM editor
     
-  - **Perform deletion**
-      di"- delete everything inside the quotes
-      ‘dG’ - delete content from cursor to end of file
-      dgg- to delete everything from bootm to top line
-      _To delete in insert mode_:
-      ctrl+w - to delet entire previous word
-      ctrl+h- to delete one letter
-      ctrl+u- to delet everything infront of the cursor
-       ‘x’ - to delete a character
-       ‘dd’- to delete current line
+* **Perform deletion**
+     -  `di`  - delete everything inside the quotes
+     -  `dG`  - delete content from cursor to end of file
+     -  `dgg` - to delete everything from bootm to top line
+     -   `x` - to delete a character
+     -   `dd`- to delete current line
+
+          -  _To delete in insert mode_:
+             -  `ctrl+w` - to delet entire previous word
+             -  `ctrl+h` - to delete one letter
+             -  `ctrl+u` - to delet everything infront of the cursor
+        
  
-  - **To set numbers for all files permanently**
-      >Vim . Vimrc then add ‘set number’
-      ‘: set number’ - to get line numbers for each line
-      ‘:set nonumber’  - to take line numbers away 
+* **To set numbers for all files permanently**
+      >Vim . Vimrc then add `set number`
+    -  `: set number`   - to get line numbers for each line
+    -  `:set nonumber`  - to take line numbers away 
 
   - To swap two lines -ddp
                                                       
