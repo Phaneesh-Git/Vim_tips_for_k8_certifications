@@ -78,9 +78,11 @@ Vim_tips
  -   `v`- to activate visual mode then use arrows to select lines or txt
     then Visual mode+`y`- copy or yank the txt or lines
       -  `p`- to put or paste the yanked txt
--   Visual mode ‘: ‘<, ‘>sort ui - to sort lines in alphabetical order 
+-   Visual mode ‘: ‘<, ‘>sort ui - to sort lines in alphabetical order
+-   ctrl-t, ctrl-d  - indent current line forward, backwards 
+                  (insert mode)
 
-- To move cursor
+- **To move cursor**
    - `L`- cursor placed at low
    - `H`-cursor placed at high
    - `M`- cursor placed at middle
