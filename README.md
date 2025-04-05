@@ -31,17 +31,17 @@ Vim_tips
  * **Entry && Exit commands**
      *  `i`   - insert mode to enter txt
      -  `Esc` - normal mode
-     -  `:`   - command mode
-     -  `:w`  - write the file but no quit
-     -  `:q`  - to quit or exit if no changes are done
-     -  `:q!` - exit without saving the file
-     -  `:qa!`- exit and abort changes
-     -  `:wq` - to write and quit
-     -  `W 'filename-here'`  - to write and save with a name
-     -  `X`   - write and exit
-     -  `ZZ`  - save and exit quickly
+     -  `Esc+:`   - command mode
+     -  `Esc+:w`  - write the file but no quit
+     -  `Esc+:q`  - to quit or exit if no changes are done
+     -  `Esc+:q!` - exit without saving the file
+     -  `Esc+:qa!`- exit and abort changes
+     -  `Esc+:wq` - to write and quit
+     -  `Esc+:W 'filename-here'`  - to write and save with a name
+     -  `Esc+:x`   - write and exit
+     -  `Esc+ZZ`  - save and exit quickly
      -  `ctrl+o` - to change to normal mode but stay in normal mode
-     -  `:! 'Enter linux command here'`  - run linux command from VIM editor
+     -  `Esc+:! 'Enter linux command here'`  - run linux command from VIM editor
     
 * **Perform deletion**
      -  `di`  - delete everything inside the quotes
