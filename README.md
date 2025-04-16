@@ -52,19 +52,19 @@ Vim_tips
 
           -  _To delete in insert mode_:
              -  `ctrl+w` - to delete entire previous word
-             -  `ctrl+h` - to delete one letter
+             -  `ctrl+h` - to delete one previous letter or space
              -  `ctrl+u` - to delete everything infront of the cursor
         
  
 * **To set numbers for all files permanently**
   >Vim . Vimrc then add `set number`
-    -  `: set number`   - to get line numbers for each line
-    -  `:set nonumber`  - to take line numbers away 
+    -  `Esc+: set number`   - to get line numbers for each line
+    -  `Esc+ :set nonumber`  - to take line numbers away 
 
-  - `ddp` -To swap two lines
-  - `u`- undo the previous action    
-  - `yi`- copy everything inside quotes
-  - `p` - to paste that was copied
+  - `Esc+ddp` -To swap two lines, current with bottom line
+  - `Esc+u`- undo the previous action    
+  - `Esc+yi`- copy everything inside quotes
+  - `insertmode+Ctrl+p` - to paste that was copied 
     
 * **To indent lines**
   -   insert mode + `S`- to indent
@@ -83,9 +83,9 @@ Vim_tips
                   (insert mode)
 
 - **To move cursor**
-   - `L`- cursor placed at low
-   - `H`-cursor placed at high
-   - `M`- cursor placed at middle
+   - `Esc+L`- cursor placed at low
+   - `Esc+H`-cursor placed at high
+   - `Esc+M`- cursor placed at middle
    - `ctrl+u`- cursor up
    - `ctrl+d`- cursor down
    - `W`- word
