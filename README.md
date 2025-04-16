@@ -39,16 +39,16 @@ Vim_tips
      -  `Esc+:wq` - to write and quit
      -  `Esc+:W 'filename-here'`  - to write and save with a name
      -  `Esc+:x`   - write and exit
-     -  `Esc+ZZ`  - save and exit quickly
+     -  `Esc+ZZ`  - save and exit quickly (`:` not required)
      -  `ctrl+o` - to change to normal mode but stay in normal mode
      -  `Esc+:! 'Enter linux command here'`  - run linux command from VIM editor
     
 * **Perform deletion**
-     -  `di`  - delete everything inside the quotes
-     -  `dG`  - delete content from cursor to end of file
-     -  `dgg` - to delete everything from bottom to top line
-     -   `x` - to delete a character
-     -   `dd`- to delete the current line
+     -  `ESc++shift+di`  - delete everything inside the quotes
+     -  `Esc+Shift+dG`  - delete content from cursor to end of file
+     -  `Esc+dgg` - to delete everything from bottom to top line
+     -   `Esc+x` - to delete a character
+     -   `Esc+dd`- to delete the current line
 
           -  _To delete in insert mode_:
              -  `ctrl+w` - to delete entire previous word
