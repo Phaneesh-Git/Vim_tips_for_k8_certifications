@@ -1,5 +1,6 @@
-Vim_tips 
-------------------------------------------
+![image](https://github.com/user-attachments/assets/158ecd7a-ab3e-4643-a87d-2f97ca47deee)
+
+
 
 - Using VIM effectively can be incredibly helpful when preparing for and passing Kubernetes certification exams, such as the CKA (Certified Kubernetes Administrator) or CKAD (Certified Kubernetes Application Developer). These exams are hands-on and time-sensitive, so efficiency in editing and managing YAML files is a core task in these exams.
 
