@@ -44,8 +44,9 @@ Vim_tips
      -  `Esc+:! 'Enter linux command here'`  - run linux command from VIM editor
     
 * **Perform deletion**
-     -  `ESc++shift+di`  - delete everything inside the quotes
-     -  `Esc+Shift+dG`  - delete content from cursor to end of file
+     -  `ESc+di"`  - delete everything inside the quotes
+     -  `Esc+da"'  - delete everything inside quotes and quotes
+     -  `Esc+dG`  - delete content from cursor to end of file
      -  `Esc+dgg` - to delete everything from bottom to top line
      -   `Esc+x` - to delete a character
      -   `Esc+dd`- to delete the current line
@@ -126,6 +127,7 @@ Vim_tips
 - `:bn` - to see the previous buffer file
 - `:bd` - to delete the current buffer 
 - `:badd file-name` - creates a buffer with new file but still cursor stays on current file
+
 
 ✅ **_Task 1_** -take back up of a yaml file before editing
 ```
