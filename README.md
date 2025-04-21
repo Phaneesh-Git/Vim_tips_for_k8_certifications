@@ -128,6 +128,7 @@
 - `:bn` - to see the previous buffer file
 - `:bd` - to delete the current buffer 
 - `:badd file-name` - creates a buffer with new file but still cursor stays on current file
+- `:set paste` - **to keep the same indentation of copied script** 
 
 
 ✅ **_Task 1_** -take back up of a yaml file before editing
