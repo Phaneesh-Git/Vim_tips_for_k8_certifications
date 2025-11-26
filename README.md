@@ -306,7 +306,7 @@ These commands are used for editing and navigation within the Vim editor.
 
 ---
 
-Would you like to integrate any additional shell commands or Vim shortcuts into this README?
+
 
 
    
