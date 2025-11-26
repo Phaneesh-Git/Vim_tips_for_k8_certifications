@@ -188,7 +188,125 @@ dd- to delete a line
 ✅ **_Task 10_**- save and quit
 ```x```
 
+## 💻 Command Line Productivity Cheatsheet (Bash & Vim)
 
+This reference sheet compiles essential keyboard shortcuts for efficient navigation, editing, and history management in the Linux/macOS terminal (Bash) and the Vim text editor.
+
+---
+
+
+
+### ⌨️ Bash Terminal Shortcuts (Readline)
+
+These shortcuts are active when typing a command in your shell.
+
+#### **Cursor Movement**
+
+| Shortcut | Action |
+| :--- | :--- |
+| **Ctrl + A** | Move to the **beginning** of the line. |
+| **Ctrl + E** | Move to the **end** of the line. |
+| **Ctrl + B** | Move **backward** one character. |
+| **Ctrl + F** | Move **forward** one character. |
+| **Alt + B** | Move **backward** one **word**. |
+| **Alt + F** | Move **forward** one **word**. |
+
+#### **Editing & Deleting**
+
+| Shortcut | Action |
+| :--- | :--- |
+| **Ctrl + U** | Delete everything **before** the cursor. |
+| **Ctrl + K** | Delete everything **after** the cursor. |
+| **Ctrl + W** | Delete the **previous word**. |
+| **Ctrl + D** | Delete the character **under** the cursor. |
+| **Ctrl + H** | Delete the character **before** the cursor (Backspace). |
+| **Ctrl + L** | **Clear** the terminal screen. |
+
+#### **Undo & Paste (Yank/Kill Buffer)**
+
+| Shortcut | Action |
+| :--- | :--- |
+| **Ctrl + Y** | **Paste** (yank) the last deleted text (from the kill buffer). |
+| **Ctrl + \_** | **Undo** the last editing action. |
+
+#### **Scrolling & Searching History**
+
+| Shortcut | Action |
+| :--- | :--- |
+| **Ctrl + R** | **Search** command history (interactive reverse-i-search). |
+| **Ctrl + P** | **Previous** command in history. |
+| **Ctrl + N** | **Next** command in history. |
+
+---
+
+### 🔎 Command History & File Search
+
+#### **View & Reuse Previous Commands**
+
+| Command/Action | Description |
+| :--- | :--- |
+| `history` | Display a list of previously executed commands. |
+| `!!` | Run the **last** command executed. |
+| `!123` | Execute command number 123 from history. |
+| `!!:s/old/new/` | Run the last command, replacing the first occurrence of `old` with `new`. |
+| `history \| grep keyword` | Search history for commands containing a specific `keyword`. |
+
+#### **Clear Command History**
+
+| Command/Action | Description |
+| :--- | :--- |
+| `history -d 123` | Remove command number 123 from history. |
+| `history -c` | Clear all command history. |
+
+#### **Finding Files**
+
+| Command | Description |
+| :--- | :--- |
+| `find /path/to/search -name "filename" 2>/dev/null` | Find a file by name while **ignoring error messages** (`2>/dev/null`). |
+| `locate filename 2>/dev/null` | **Faster** search for a file by name using a pre-built database. |
+
+---
+
+### 🗒️ Vim Editor Commands
+
+These commands are used for editing and navigation within the Vim editor.
+
+#### **Movement and Selection**
+
+| Command | Mode | Action |
+| :--- | :--- | :--- |
+| **i** | Normal | **Insert** mode: Insert **before** the cursor. |
+| **I** | Normal | **Insert** mode: Go and edit at the **beginning** of the line. |
+| **A** | Normal | **Insert** mode: Go and edit at the **end** of the line. |
+| **V** | Normal | Enter **Visual Line** mode (to select entire lines). |
+| **d$** or **D** | Normal | **Delete** from the cursor to the end of the line. |
+
+#### **Editing and Deleting**
+
+| Command | Mode | Action |
+| :--- | :--- | :--- |
+| **dd** | Normal | **Delete** the current line. |
+| **Ctrl + W** | Insert | Deletes the **previous word**. |
+| **Ctrl + U** | Insert | Deletes everything **before** the cursor on the current line. |
+| **Ctrl + H** | Insert | Deletes the character **before** the cursor. |
+| **Ctrl + D** | Insert | Deletes the character **under** the cursor. |
+
+#### **Indentation**
+
+| Command | Mode | Action |
+| :--- | :--- | :--- |
+| **>** | Visual | **Indent** selected lines **right**. |
+| **<** | Visual | **Indent** selected lines **left**. |
+
+#### **Exiting**
+
+| Command | Mode | Action |
+| :--- | :--- | :--- |
+| **ZZ** | Normal | **Save and exit** (equivalent to `:wq`). |
+
+---
+
+Would you like to integrate any additional shell commands or Vim shortcuts into this README?
 
 
    
